@@ -130,15 +130,6 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .system-col-left {
-        min-height: 0;
-    }
-
-    .system-col-left img {
-        position: static;
-        height: auto;
-    }
-
     .card {
         padding: 20px;
         box-shadow: 5px 5px 0px var(--primary);
@@ -275,15 +266,7 @@ h2 {
 }
 
 .system-col-left {
-    position: relative;
-    min-height: 300px;
-}
-
-.system-col-left img {
-    position: absolute;
-    inset: 0;
-    height: 100%;
-    object-fit: cover;
+    min-width: 0;
 }
 
 .system-images img {
