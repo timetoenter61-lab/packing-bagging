@@ -1,4 +1,4 @@
-* --- RESET & VARIABLES --- */
+/* --- RESET & VARIABLES --- */
 * {
     margin: 0;
     padding: 0;
@@ -392,4 +392,25 @@ footer {
     font-size: 0.9rem;
     margin-top: 60px;
     border-top: var(--border-weight) solid var(--primary);
+}
+
+/* --- MOBILE OVERRIDES (must stay last) --- */
+@media (max-width: 700px) {
+    .system-images {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .table-wrapper {
+        width: 100%;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+        overflow-wrap: anywhere;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+        overflow-wrap: anywhere;
+    }
 }
